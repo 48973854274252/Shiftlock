@@ -22,10 +22,10 @@ LockButton.Position = UDim2.new(0.785148501, 0, 0.865914762, 0)
 LockButton.Size = UDim2.new(0, 60, 0, 60)
 LockButton.ZIndex = 3
 LockButton.Image = "rbxassetid://530406505"
-LockButton.ImageColor3 = Color3.fromRGB(0, 133, 199)
+LockButton.ImageColor3 = Color3.fromRGB(16, 21, 27)
 LockButton.ImageRectOffset = Vector2.new(2, 2)
 LockButton.ImageRectSize = Vector2.new(98, 98)
-LockButton.ImageTransparency = 1
+LockButton.ImageTransparency = 0
 LockButton.ScaleType = Enum.ScaleType.Fit
 
 btnIcon.Name = "btnIcon"
@@ -36,7 +36,7 @@ btnIcon.Position = UDim2.new(0.100000001, 0, 0.100000001, 0)
 btnIcon.Size = UDim2.new(0.800000012, 0, 0.800000012, 0)
 btnIcon.ZIndex = 3
 btnIcon.Image = "rbxasset://textures/ui/mouseLock_off.png"
-btnIcon.ImageColor3 = Color3.fromRGB(255, 255, 255)
+btnIcon.ImageColor3 = Color3.fromRGB(158, 158, 160)
 btnIcon.ScaleType = Enum.ScaleType.Fit
 btnIcon.SliceCenter = Rect.new(-160, 0, 100, 0)
 
@@ -101,7 +101,7 @@ local function YDYMLAX_fake_script()
 
 	main.MouseButton1Click:Connect(function()
 		V = not V
-		main.btnIcon.ImageColor3 = V and Color3.fromRGB(55,174,103) or Color3.fromRGB(255, 255, 255)
+		main.btnIcon.ImageColor3 = V and Color3.fromRGB(27, 117, 65) or Color3.fromRGB(158, 158, 160)
 		if V then
 			ForceShiftLock()
 		else
