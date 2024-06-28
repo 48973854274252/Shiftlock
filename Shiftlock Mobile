@@ -39,7 +39,6 @@ btnIcon.Image = "rbxasset://textures/ui/mouseLock_off.png"
 btnIcon.ImageColor3 = Color3.fromRGB(158, 158, 160)
 btnIcon.ScaleType = Enum.ScaleType.Fit
 btnIcon.SliceCenter = Rect.new(-160, 0, 100, 0)
-btnIcon.Image = "rbxassetid://14936398281"
 
 --[[susDrag.Name = "susDrag"
 susDrag.Parent = LockButton
