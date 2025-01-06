@@ -307,10 +307,10 @@ if not getgenv().Network then
 end
 
 -- Edits
-local radius = ​
-local height = ​
-local rotationSpeed = ​
-local attractionStrength = ​
+local radius = 50
+local height = 100
+local rotationSpeed = 0.5
+local attractionStrength = 1000
 local ringPartsEnabled = false
 
 local function RetainPart(Part)
@@ -392,3 +392,30 @@ IncreaseRadius.MouseButton1Click:Connect(function()
     RadiusDisplay.Text = "Radius: " .. radius
     playSound("12221967")
 end)
+
+-- Get player thumbnail
+local userId = Players:GetUserIdFromNameAsync("Robloxlukasgames")
+local thumbType = Enum.ThumbnailType.HeadShot
+local thumbSize = Enum.ThumbnailSize.Size420x420
+local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Super ring parts V4",
+    Text = "enjoy",
+    Icon = content,
+    Duration = 5
+})
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Credits",
+    Text = "Original By Yumm Scriptblox",
+    Icon = content,
+    Duration = 5
+})
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Credits",
+    Text = "Edited By lukas",
+    Icon = content,
+    Duration = 5
+})
